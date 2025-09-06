@@ -1,8 +1,8 @@
 import * as dbService from "../../DB/dbService.js";
 import  UserModel  from "../../DB/Models/User.model.js";
 import { cloudinaryConfig } from "../../Utils/multer/cloudinary.js";
-import MessageModel from "../../DB/Models/Message.model.js";
-import {successResponse} from "../../Utils/successResponse.utils.js";
+import MessageModel from "../../DB/Models/message.model.js";
+import {successResponse} from "../../Utils/successResponse.utils.js"; 
 
 export const sendMessage = async (req, res, next) => {
     const { recieverId } = req.params;
